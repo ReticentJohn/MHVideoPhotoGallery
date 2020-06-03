@@ -1415,7 +1415,7 @@
                                                name:MPMoviePlayerPlaybackDidFinishNotification
                                              object:self.moviePlayer];
     
-    self.moviePlayer.showsPlaybackControls = YES;
+    self.moviePlayer.showsPlaybackControls = NO;
     self.moviePlayer.view.frame = self.view.bounds;
     self.moviePlayer.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     self.moviePlayer.view.hidden = YES;
