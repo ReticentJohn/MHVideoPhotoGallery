@@ -1520,10 +1520,10 @@
                 }
             }
         }
-        self.moviePlayerToolBarTop.frame =CGRectMake(0,44+([UIApplication sharedApplication].statusBarHidden?0:20), self.view.frame.size.width, 44);
+        self.moviePlayerToolBarTop.frame =CGRectMake(0,self.navigationController.navigationBar.bounds.size.height+([UIApplication sharedApplication].keyWindow.safeAreaInsets.top), self.view.frame.size.width, 44);
         if (!MHISIPAD) {
             if (UIApplication.sharedApplication.statusBarOrientation != UIInterfaceOrientationPortrait) {
-                self.moviePlayerToolBarTop.frame =CGRectMake(0,32+([UIApplication sharedApplication].statusBarHidden?0:20), self.view.frame.size.width, 44);
+                self.moviePlayerToolBarTop.frame =CGRectMake(0,32+([UIApplication sharedApplication].keyWindow.safeAreaInsets.top), self.view.frame.size.width, 44);
             }
         }
         
