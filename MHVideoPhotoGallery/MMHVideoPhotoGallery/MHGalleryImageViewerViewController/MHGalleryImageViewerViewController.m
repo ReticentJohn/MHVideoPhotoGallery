@@ -833,6 +833,13 @@
     }
     
     if (!userScrolls || recognizer.state == UIGestureRecognizerStateEnded || recognizer.state == UIGestureRecognizerStateCancelled) {
+        if (self.moviePlayerToolBarTop) {
+            self.moviePlayerToolBarTop.alpha =0;
+        }
+        [self changeUIForViewMode:MHGalleryViewModeImageViewerNavigationBarHidden];
+        self.viewController.hiddingToolBarAndNavigationBar = YES;
+        self.navigationController.navigationBar.hidden  =YES;
+        self.viewController.toolbar.hidden =YES;
         CGFloat progressY = (self.startPoint.y - [recognizer translationInView:self.view].y)/(self.view.frame.size.height/2);
         progressY = [self checkProgressValue:progressY];
         CGFloat progressX = (self.startPoint.x - [recognizer translationInView:self.view].x)/(self.view.frame.size.width/2);
