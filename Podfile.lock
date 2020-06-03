@@ -10,11 +10,17 @@ DEPENDENCIES:
   - SDWebImage
   - TTTAttributedLabel (= 1.13.3)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+    - SDWebImage
+    - TTTAttributedLabel
+
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   TTTAttributedLabel: 6f3174aef8e738f44dff97c2eb7d8184f6ab6277
 
-PODFILE CHECKSUM: a1401044919e6c1bd2c560707667a98907c01b41
+PODFILE CHECKSUM: 6c981ee666a541256b80c3efc7fe31a52e7729f0
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.9.1
